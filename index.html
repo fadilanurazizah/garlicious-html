@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garlicious - Premium Black Garlic Indonesia by PT. MNA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        * { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); }
+        .hover-lift:hover { transform: translateY(-8px); transition: transform 0.3s; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .fade-in { animation: fadeIn 0.6s ease-in; }
+        #testimonial-slider { scrollbar-width: thin; scrollbar-color: #fbbf24 #f3f4f6; }
+        
+        .loops-group { display: block; margin-bottom: 20px; }
+        .loops-group label { font-weight: bold; }
+        .loops-group input { display: block; width: 100%; height: 36px; border: 1px solid #ccc; border-radius: 3px; padding: 0 15px; }
+        .loops-group input.loops-submit { background: #f59e0b; color: #fff; font-weight: 700; cursor: pointer; height: 50px; border-radius: 25px; transition: all 0.3s; }
+        .loops-group input.loops-submit:hover { background: #fbbf24; box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
+        .loops-footer { font-size: 11px; color: #ccc; font-style: italic; text-align: center; margin-top: 10px; }
+        .red { color: #B30000; }
+    </style>
+</head>
+<body class="scroll-smooth">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3">
+                    <div class="w-16 h-16 bg-yellow-400 rounded-lg flex items-center justify-center relative overflow-hidden">
+                        <svg viewBox="0 0 200 200" class="w-14 h-14">
+                            <ellipse cx="60" cy="60" rx="8" ry="10" fill="#000"/>
+                            <ellipse cx="140" cy="60" rx="8" ry="10" fill="#000"/>
+                            <path d="M 50 120 Q 100 150 150 120" stroke="#000" stroke-width="6" fill="none" stroke-linecap="round"/>
+                            <path d="M 145 115 L 155 110 Q 160 115 155 120 L 145 115" fill="#000"/>
+                        </svg>
+                    </div>
+                    <div><h1 class="text-2xl font-bold text-gray-900">Garlicious</h1><p class="text-xs text-gray-600">Healthy • Delicious</p></div>
+                </div>
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="#garlicious" class="text-gray-700 hover:text-yellow-600 transition font-medium">About</a>
+                    <a href="#penderita" class="text-gray-700 hover:text-yellow-600 transition font-medium">Data</a>
+                    <a href="#manfaat" class="text-gray-700 hover:text-yellow-600 transition font-medium">Manfaat</a>
+                    <a href="#uji" class="text-gray-700 hover:text-yellow-600 transition font-medium">Uji Lab</a>
+                    <a href="#cara-konsumsi" class="text-gray-700 hover:text-yellow-600 transition font-medium">Cara Konsumsi</a>
+                    <a href="#reviews" class="text-gray-700 hover:text-yellow-600 transition font-medium">Review</a>
+                    <a href="#order" class="gradient-bg text-white px-6 py-2 rounded-full font-semibold">Pesan</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="garlicious" class="pt-32 pb-20 px-4 bg-gradient-to-b from-yellow-50 to-white">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 fade-in">
+                <div class="inline-block bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full text-sm font-semibold">✨ Premium Black Garlic Indonesia</div>
+                <h1 class="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
+                 <span class="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">Garlicious</span><br>Black Garlic Jumbo
+                </h1>
+                <p class="text-xl text-gray-600">Black Garlic Garlicious Bawang Hitam Premium yang difermentasi hingga 4 bulan (120 hari). Difermentasi dengan mesin khusus standar industri sehingga membuat Kualitas yang konsisten, rasa dominan manis dan tekstur yang lembut.</p>
+                <p class="text-xl text-gray-700">Terbuat dari bawang tunggal jumbo pilihan, ditanam dan dipanen dengan teknologi modern.</p>
+                <a href="#order" class="gradient-bg text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl transition inline-block">Beli Sekarang</a>
+            </div>
+            <div class="relative fade-in">
+                <img src="C:\Users\fadil\Documents\Web Developed\Garlicious\hero-product.png" alt="Garlicious" class="w-full rounded-2xl shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-12 gradient-bg">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+            <div><div class="text-4xl font-bold mb-2">2,500+</div><div>Pelanggan Puas</div></div>
+            <div><div class="text-4xl font-bold mb-2">250g</div><div>Ukuran Jumbo</div></div>
+            <div><div class="text-4xl font-bold mb-2">10x</div><div>Antioksidan Lebih Kuat</div></div>
+            <div><div class="text-4xl font-bold mb-2">100%</div><div>Natural Premium</div></div>
+        </div>
+    </section>
+
+    <!-- Hypertension Alert -->
+<section id="penderita" class="py-20 px-4 bg-gradient-to-br from-red-50 to-white">
+    <div class="max-w-7xl mx-auto">
+        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
+            <div class="grid md:grid-cols-2 gap-0">
+                <div class="bg-gradient-to-br from-red-100 to-red-50 p-8 md:p-12 flex items-center justify-center">
+                    <div class="w-full max-w-md">
+                        <img src="C:\Users\fadil\Documents\Web Developed\Garlicious\hipertensi-data.jpeg" alt="Hipertensi Indonesia" class="w-full h-auto rounded-2xl shadow-lg">
+                        <div class="mt-6 bg-white rounded-xl p-6 shadow-md">
+                            <h3 class="text-xl font-bold text-red-600 mb-3">⚠️ Fakta Mengkhawatirkan</h3>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li><span class="text-red-600 font-bold">•</span> <strong>34,1%</strong> penduduk Indonesia menderita hipertensi (2018)</li>
+                                <li><span class="text-red-600 font-bold">•</span> Naik dari <strong>25,8%</strong> di tahun 2013</li>
+                                <li><span class="text-red-600 font-bold">•</span> <strong>Kalimantan tertinggi: 37,6%</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8 md:p-12 flex flex-col justify-center">
+                    <div class="inline-block bg-red-100 text-red-600 px-4 py-2 rounded-full text-sm font-semibold mb-4 w-fit">📊 Data Kemenkes RI 2018</div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Penderita Hipertensi Indonesia <span class="text-red-600">Meningkat Drastis!</span></h2>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1"><span class="text-red-600 font-bold">!</span></div>
+                            <p class="text-gray-700"><strong class="text-red-600">1 dari 3 orang Indonesia</strong> menderita hipertensi menurut Riskesdas Kemenkes RI</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1"><span class="text-yellow-600 font-bold text-lg">✓</span></div>
+                            <p class="text-gray-700"><strong class="text-yellow-600">Black Garlic Garlicious</strong> membantu menjaga tekanan darah tetap stabil secara alami</p>
+                        </div>
+                    </div>
+                    <a href="#order" class="gradient-bg text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transition inline-flex items-center justify-center w-fit">Jaga Kesehatan Sekarang →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Main Benefits -->
+    <section id="manfaat" class="py-20 px-4 bg-gradient-to-br from-yellow-50 to-yellow-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Manfaat Utama <span class="text-yellow-600">Garlicious</span></h2>
+            </div>
+            <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4 bg-gradient-to-r from-yellow-50 to-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+                            <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
+                                <span class="text-white text-xl">✓</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900">Menjaga <span class="text-yellow-600">tekanan darah tetap stabil</span></h3>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4 bg-gradient-to-r from-yellow-50 to-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+                            <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
+                                <span class="text-white text-xl">✓</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900">Membantu <span class="text-yellow-600">menurunkan kolesterol</span></h3>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4 bg-gradient-to-r from-yellow-50 to-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+                            <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
+                                <span class="text-white text-xl">✓</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900">Mendukung <span class="text-yellow-600">kesehatan jantung</span></h3>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4 bg-gradient-to-r from-yellow-50 to-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+                            <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
+                                <span class="text-white text-xl">✓</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900">Meningkatkan <span class="text-yellow-600">imunitas tubuh</span></h3>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4 bg-gradient-to-r from-yellow-50 to-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+                            <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
+                                <span class="text-white text-xl">✓</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900"><span class="text-yellow-600">Antioksidan</span> tinggi melawan radikal bebas dan penuaan dini</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="C:\Users\fadil\Documents\Web Developed\Garlicious\product-manfaat.png" alt="Product" class="w-full rounded-2xl shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lab Test -->
+    <section id="uji" class="py-20 px-4 bg-gradient-to-b from-white to-yellow-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Hasil Uji Lab <span class="text-yellow-600">Garlicious</span></h2>
+                <p class="text-xl text-gray-600">Terbukti aman, higienis, dan bebas dari kontaminasi</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <!-- Left Column: Lab Certificate -->
+                <div class="relative">
+                    <div class="relative bg-white rounded-3xl shadow-2xl p-6">
+                        <div class="bg-gradient-to-br from-yellow-100 to-yellow-50 rounded-2xl p-4 mb-4 flex items-center justify-between">
+                            <h3 class="text-xl font-bold text-gray-900">Hasil Uji Lab SIG</h3>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center">
+                                    <span class="text-white font-bold">✓</span>
+                                </div>
+                                <span class="text-xs font-semibold text-yellow-700">AMAN</span>
+                            </div>
+                        </div>
+                        <img src="C:\Users\fadil\Documents\Web Developed\Garlicious\lab-certificate.jpg" alt="Lab Certificate" class="w-full rounded-xl shadow-lg">
+                        <div class="mt-6 grid grid-cols-2 gap-4">
+                            <div class="bg-green-50 rounded-xl p-4 text-center border-2 border-green-200">
+                                <div class="text-3xl mb-2">✓</div>
+                                <p class="text-sm font-semibold text-green-800">Bebas Logam Berat</p>
+                                <p class="text-xs text-green-600 mt-1">As, Cd, Hg, Pb, Sn</p>
+                            </div>
+                            <div class="bg-green-50 rounded-xl p-4 text-center border-2 border-green-200">
+                                <div class="text-3xl mb-2">✓</div>
+                                <p class="text-sm font-semibold text-green-800">Bebas Bakteri</p>
+                                <p class="text-xs text-green-600 mt-1">Salmonella, Clostridium</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Right Column: Parameters & Certifications -->
+                <div class="space-y-6">
+                    <!-- Parameters Card -->
+                    <div class="bg-white rounded-2xl p-6 shadow-lg">
+                        <h4 class="font-bold text-gray-900 mb-4">📋 Parameter yang Diuji:</h4>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">Arsen (As)</span>
+                                <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">Not Detected</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">Kadmium (Cd)</span>
+                                <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">Not Detected</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">Merkuri (Hg)</span>
+                                <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">Not Detected</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">Timbal (Pb)</span>
+                                <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">Not Detected</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">Salmonella sp.</span>
+                                <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">Negative</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Certifications -->
+                    <div class="bg-white rounded-2xl p-6 shadow-lg">
+                        <p class="text-center mb-4 font-semibold text-gray-900">Terjamin Aman & Berkualitas</p>
+                        <div class="grid grid-cols-4 gap-4">
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 bg-gradient-to-br from-green-50 to-green-100 rounded-xl shadow-md flex items-center justify-center mb-2 border-2 border-green-200">
+                                    <span class="text-green-600 font-bold text-xs">✓ FDA</span>
+                                </div>
+                                <p class="text-xs text-gray-600 text-center font-medium">FDA Approved</p>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl shadow-md flex items-center justify-center mb-2 border-2 border-blue-200">
+                                    <span class="text-blue-600 font-bold text-xs">HACCP</span>
+                                </div>
+                                <p class="text-xs text-gray-600 text-center font-medium">Certified</p>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl shadow-md flex items-center justify-center mb-2 border-2 border-purple-200">
+                                    <span class="text-purple-600 font-bold text-xs">HALAL</span>
+                                </div>
+                                <p class="text-xs text-gray-600 text-center font-medium">MUI</p>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl shadow-md flex items-center justify-center mb-2 border-2 border-orange-200">
+                                    <span class="text-orange-600 font-bold text-xs">PIRT</span>
+                                </div>
+                                <p class="text-xs text-gray-600 text-center font-medium">Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Info Badge -->
+                    <div class="bg-gradient-to-r from-yellow-400 to-orange-500 rounded-2xl p-6 text-white text-center shadow-xl">
+                        <p class="font-bold text-lg mb-2">✓ Lolos Uji Laboratorium</p>
+                        <p class="text-sm text-white/90">Standar Keamanan Pangan Internasional</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cara Konsumsi -->
+    <section id="cara-konsumsi" class="py-20 px-4 bg-gradient-to-b from-white to-yellow-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Cara Konsumsi <span class="text-yellow-600">Black Garlic Garlicious</span></h2>
+            </div>
+            <div class="bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-3xl shadow-2xl overflow-hidden">
+                <div class="grid md:grid-cols-2 gap-0">
+                    <div class="bg-yellow-300 flex items-center justify-center p-8">
+                        <img src="C:\Users\fadil\Documents\Web Developed\Garlicious\cara-konsumsi.jpeg" alt="Cara Konsumsi" class="w-full max-w-md rounded-2xl shadow-xl">
+                    </div>
+                    <div class="p-8 md:p-12 flex flex-col justify-center">
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4 bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
+                                <div class="w-14 h-14 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
+                                    <span class="text-white font-bold text-xl">1</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-900 mb-2">Konsumsi Langsung</h3>
+                                    <p class="text-gray-700">Bisa dimakan langsung cukup <strong>1 butir sehari</strong> di pagi atau malam hari</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4 bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
+                                <div class="w-14 h-14 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
+                                    <span class="text-white font-bold text-xl">2</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-900 mb-2">Campurkan dalam Masakan</h3>
+                                    <p class="text-gray-700">Dicampurkan dalam masakan, dicampur di <strong>sambel atau jadikan selai</strong>. Kamu bisa kreasikan</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4 bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
+                                <div class="w-14 h-14 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
+                                    <span class="text-white font-bold text-xl">3</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-900 mb-2">Setelah Makan Berat</h3>
+                                    <p class="text-gray-700">Buat yang punya <strong>Magh</strong> dianjurkan konsumsi <strong>setelah makan berat</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="py-20 px-4 bg-gradient-to-b from-white to-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Review <span class="text-yellow-600">Pelanggan Kami</span></h2>
+                <p class="text-xl text-gray-600">Testimoni asli dari pembeli Garlicious</p>
+            </div>
+            <div class="relative mx-auto" style="max-width: 1100px;">
+                <div id="testimonial-slider" class="flex gap-0 overflow-x-auto scroll-smooth snap-x snap-mandatory">
+                    
+                    <!-- Review 1 - nenciaja -->
+                    <div class="min-w-full snap-center flex-shrink-0 flex items-center justify-center" style="min-height: 90vh;">
+                        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden w-full mx-4" style="max-width: 900px;">
+                            <div class="bg-gradient-to-br from-yellow-100 to-yellow-50 p-8 border-b-4 border-yellow-400">
+                                <div class="flex items-center justify-between mb-6">
+                                    <div class="flex items-center space-x-4">
+                                        <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold text-2xl flex-shrink-0">N</div>
+                                        <div>
+                                            <h3 class="font-bold text-gray-900 text-xl">nenciaja</h3>
+                                            <div class="flex text-yellow-500 text-lg">⭐⭐⭐⭐⭐</div>
+                                        </div>
+                                    </div>
+                                    <span class="bg-yellow-400 text-white text-sm px-4 py-2 rounded-full font-semibold">Pembeli</span>
+                                </div>
+                                <div class="space-y-3 text-base">
+                                    <p class="text-justify leading-relaxed"><span class="font-semibold text-gray-800">Rasa:</span> <span class="text-gray-700">rasa bawang fermentasi. kualitas bagus</span></p>
+                                    <p class="text-justify leading-relaxed"><span class="font-semibold text-gray-800">Kedaluarsa:</span> <span class="text-gray-700">masih berbulan-bulan lagi</span></p>
+                                    <p class="text-justify leading-relaxed"><span class="font-semibold text-gray-800">Keaslian:</span> <span class="text-gray-700">asli. kualitas premium</span></p>
+                                </div>
+                            </div>
+                            <div class="p-8">
+                                <p class="text-gray-800 text-lg leading-relaxed mb-6 italic text-justify">"Black garlicnya kualitas premium ukuran jumbo. Rasa manis n asam fermentasi. Thanks seller."</p>
+                                <div class="mb-6 rounded-2xl overflow-hidden">
+                                    <img src="C:\Users\fadil\Documents\Web Developed\Garlicious\review1.jpeg" alt="Review nenciaja" class="w-full object-contain" style="max-height: 400px;">
+                                </div>
+                                <p class="text-sm text-gray-500 text-right">09-08-2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 - inmypov_lh -->
+                    <div class="min-w-full snap-center flex-shrink-0 flex items-center justify-center" style="min-height: 90vh;">
+                        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden w-full mx-4" style="max-width: 900px;">
+                            <div class="bg-gradient-to-br from-yellow-100 to-yellow-50 p-8 border-b-4 border-yellow-400">
+                                <div class="flex items-center justify-between mb-6">
+                                    <div class="flex items-center space-x-4">
+                                        <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold text-2xl flex-shrink-0">I</div>
+                                        <div>
+                                            <h3 class="font-bold text-gray-900 text-xl">inmypov_lh</h3>
+                                            <div class="flex text-yellow-500 text-lg">⭐⭐⭐⭐⭐</div>
+                                        </div>
+                                    </div>
+                                    <span class="bg-green-500 text-white text-sm px-4 py-2 rounded-full font-semibold">Verified</span>
+                                </div>
+                            </div>
+                            <div class="p-8">
+                                <p class="text-gray-800 text-lg leading-relaxed mb-6 italic text-justify">"Pertama kali cobain black garlic, rasanya gurih ada asem dikit, manis juga dan tekstur chewy. Bawangnya juga gede ini. Aromanya juga enak bgt pas buka toplesnya 😭👍 packingnya juga aman, next bakal order disini lagi💓👍"</p>
+                                <p class="text-base font-semibold text-gray-800 mb-6">Kualitas produk: <span class="text-green-600">Bagus</span></p>
+                                <div class="mb-6 rounded-2xl overflow-hidden">
+                                    <img src="C:\Users\fadil\Documents\Web Developed\Garlicious\review2.jpeg" alt="Review inmypov_lh" class="w-full object-contain" style="max-height: 400px;">
+                                </div>
+                                <p class="text-sm text-gray-500 text-right"> 11-8-2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 - dianahatta88 -->
+                    <div class="min-w-full snap-center flex-shrink-0 flex items-center justify-center" style="min-height: 90vh;">
+                        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden w-full mx-4" style="max-width: 900px;">
+                            <div class="bg-gradient-to-br from-yellow-100 to-yellow-50 p-8 border-b-4 border-yellow-400">
+                                <div class="flex items-center justify-between mb-6">
+                                    <div class="flex items-center space-x-4">
+                                        <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold text-2xl flex-shrink-0">D</div>
+                                        <div>
+                                            <h3 class="font-bold text-gray-900 text-xl">dianahatta88</h3>
+                                            <div class="flex text-yellow-500 text-lg">⭐⭐⭐⭐⭐</div>
+                                        </div>
+                                    </div>
+                                    <span class="bg-yellow-400 text-white text-sm px-4 py-2 rounded-full font-semibold">Balas</span>
+                                </div>
+                                <div class="space-y-3 text-base">
+                                    <p class="text-justify leading-relaxed"><span class="font-semibold text-gray-800">Rasa:</span> <span class="text-gray-700">ada asam ada manis</span></p>
+                                    <p class="text-justify leading-relaxed"><span class="font-semibold text-gray-800">Ukuran:</span> <span class="text-gray-700">besar</span></p>
+                                </div>
+                            </div>
+                            <div class="p-8">
+                                <p class="text-gray-800 text-lg leading-relaxed mb-6 italic text-justify">"Alhamdulillah sdh di konsumsi 1 minggu. Ga kecewa beli di sini sesuai harga memang premium bagus, bulat besar padat, engga berair kering, sesuai testimoni emang bagus terimaksih penjual sdh amanah"</p>
+                                <div class="mb-6 rounded-2xl overflow-hidden">
+                                    <img src="C:\Users\fadil\Documents\Web Developed\Garlicious\review3.jpeg" alt="Review dianahatta88" class="w-full object-contain" style="max-height: 400px;">
+                                </div>
+                                <p class="text-sm text-gray-500 text-right">02-08-2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 4 - Bu Sumijah (WhatsApp) -->
+                    <div class="min-w-full snap-center flex-shrink-0 flex items-center justify-center" style="min-height: 90vh;">
+                        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden w-full mx-4" style="max-width: 900px;">
+                            <div class="bg-gradient-to-br from-green-100 to-green-50 p-8 border-b-4 border-green-400">
+                                <div class="flex items-center justify-between mb-6">
+                                    <div class="flex items-center space-x-4">
+                                        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-2xl flex-shrink-0">S</div>
+                                        <div>
+                                            <h3 class="font-bold text-gray-900 text-xl">Bu Sumijah</h3>
+                                            <div class="flex text-yellow-500 text-lg">⭐⭐⭐⭐⭐</div>
+                                        </div>
+                                    </div>
+                                    <span class="bg-green-500 text-white text-sm px-4 py-2 rounded-full font-semibold">WhatsApp</span>
+                                </div>
+                                <p class="text-sm text-gray-700 font-medium">Testimoni Pasien Sakit Jantung dan Kolesterol</p>
+                            </div>
+                            <div class="p-8 bg-gradient-to-b from-green-50 to-white">
+                                <div class="bg-gray-800 rounded-2xl p-6 mb-6 text-white text-base leading-relaxed">
+                                    <p class="mb-4 text-justify">"Pak, kmarin sy ambil bawang lagi 2.. Ada pasien samping pak heru yg karena kondisi menggigil hebat..sy kasih bawang 2 biji..di makan...lha kok berhenti nggigil nya.."</p>
+                                    <p class="mb-4 text-justify">"Terus anget badan nya.. Terus mau makan walau pun cuma setengah porsi..istri nya yg suka ada kolesterol jg ikut makan..."</p>
+                                    <p class="mb-3 text-justify">"Beliau bilang badan ku enak...nggak sakit sakit lagi..kata nya"</p>
+                                    <p class="text-gray-400 text-sm text-right">14:33 - 14:37</p>
+                                </div>
+                                
+                                <div class="mb-6 rounded-2xl overflow-hidden">
+                                    <img src="C:\Users\fadil\Documents\Web Developed\Garlicious\review4.jpeg" alt="Review dianahatta88" class="w-full object-contain" style="max-height: 400px;">
+                                </div>
+
+                                <p class="text-sm text-gray-500 mt-6 text-right">13-11-2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button onclick="document.getElementById('testimonial-slider').scrollBy({left: -window.innerWidth, behavior: 'smooth'})" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-12 h-12 bg-white rounded-full shadow-xl flex items-center justify-center text-gray-700 hover:bg-yellow-400 hover:text-white transition z-10">
+                    <span class="text-3xl font-bold">‹</span>
+                </button>
+                <button onclick="document.getElementById('testimonial-slider').scrollBy({left: window.innerWidth, behavior: 'smooth'})" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-12 h-12 bg-white rounded-full shadow-xl flex items-center justify-center text-gray-700 hover:bg-yellow-400 hover:text-white transition z-10">
+                    <span class="text-3xl font-bold">›</span>
+                </button>
+            </div>
+
+            <!-- Dots Indicator -->
+            <div class="flex justify-center mt-8 space-x-2">
+                <div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+                <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+            </div>
+
+            <div class="text-center mt-6">
+                <p class="text-gray-600 text-sm">← Swipe untuk melihat review lainnya →</p>
+            </div>
+        </div>
+    </section>
+
+     <!-- Payment & Shipping -->
+    <section class="py-20 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Metode Pembayaran</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center"><div class="text-3xl font-bold text-blue-600">BCA</div></div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center"><div class="text-3xl font-bold text-blue-700">BRI</div></div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center"><div class="text-3xl font-bold text-yellow-500">Mandiri</div></div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center"><div class="text-3xl font-bold text-orange-600">COD</div></div>
+            </div>
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Metode Pengiriman</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center"><div class="text-3xl font-bold text-red-600">JNE</div></div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center"><div class="text-3xl font-bold text-red-600">J&T</div></div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center"><div class="text-3xl font-bold text-red-600">SPX</div></div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center"><div class="text-3xl font-bold text-orange-600">IDExpress</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ORDER SECTION -->
+    <section id="order" class="py-20 px-4 gradient-bg">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-white mb-6">Dapatkan Garlicious Sekarang!</h2>
+            <div class="bg-white rounded-3xl p-12 shadow-2xl">
+            <h2 class="text-4xl font-bold text-black mb-6">🔥 Promo Spesial Januari 2026!</h2>
+            <div class="mb-8">
+                <div class="text-3xl text-red-600 line-through opacity-75 mb-2">Rp 250.000</div>
+                <div class="text-6xl font-bold text-black mb-2">Rp 129.000</div>
+                <div class="text-yellow-900 font-semibold text-xl">⚡ HEMAT 48% - Per kaleng (250 gram)</div>
+            </div>
+                
+                <!-- Order Form -->
+                                <form id="loops-form-order" class="loops-forms max-w-md mx-auto mb-6" action="https://app.loops.id/save-order/garlicious250g" method="POST">
+                    <input type="hidden" name="product" value="Garlicious 250g">
+                    <div class="loops-group">
+                        <label for="name">Nama <span class="red">*</span></label>
+                        <input type="text" id="name" name="name" value="" placeholder="Tulis nama Anda" required>
+                    </div>
+                    <div class="loops-group">
+                        <label for="phone">No WhatsApp <span class="red">*</span></label>
+                        <input type="text" id="phone" name="phone" value="" placeholder="Contoh: 081234567890" pattern="[0]{1}[0-9]{8,12}" required>
+                    </div>
+                    <div class="loops-group">
+                        <input id="loops-form-submit" type="submit" value="Beli Sekarang" class="loops-submit">
+                    </div>
+                    <input type="hidden" id="current" name="current" value="">
+                    <input type="hidden" name="redirect" value="">
+                    <input type="hidden" name="_loops_nonce" value="">
+                    <p class="loops-footer">Powered by <a href="https://loops.id/?utm_source=form-embed&utm_content=291841" class="text-yellow-600">Loops.id</a></p>
+                </form>
+                
+                <p class="text-xs text-gray-500 mb-8">Data Anda aman dan hanya digunakan untuk proses pemesanan</p>
+            </div>
+            <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-6 mt-6">
+                <p class="text-white text-lg font-bold mb-2">🎁 Ayoo Order Sekarang!</p>
+                <p class="text-yellow-100 text-sm">Dapatkan bonus eksklusif & diskon menarik lainnya. Stok terbatas!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Hubungi Kami</h2>
+            <div class="bg-yellow-50 p-8 rounded-2xl">
+                <p class="text-lg mb-2"><strong>WhatsApp:</strong> +62 812-7457-7130 (CS Rina)</p>
+                <p class="text-lg mb-2"><strong>Email:</strong> garliciousindonesia@gmail.com</p>
+                <p class="text-lg mb-4"><strong>Alamat:</strong> Jl. Garuda No.1784, RT.2/RW.17, Serua, Kec. Ciputat, Kota Tangerang Selatan, Banten 15414</p>
+                <p class="text-sm text-gray-600">PT. Manha Nail Al-Anhar (MNA)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-16 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-gray-400">&copy; 2026 Garlicious by PT. MNA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-white', 'shadow-lg');
+            } else {
+                navbar.classList.remove('bg-white', 'shadow-lg');
+            }
+        });
+
+        var form = document.getElementById('loops-form-order');
+        var loopsFormBtn = document.getElementById('loops-form-submit');
+        var submiting = false;
+        
+        loopsFormBtn.addEventListener('click', function(event) { 
+            if (submiting) {
+                setTimeout(function () {
+                    event.target.disabled = true;
+                }, 0);
+            } 
+        });
+        
+        form.addEventListener('submit', function(e){
+            if (!submiting) {
+                if (typeof fbq !== "undefined" && !submiting) {
+                    fbq("track", "AddToCart", { source: "loops.id", version: "2.0.1", currency: "IDR", value: 129000 });
+                }
+            }
+            submiting = true;
+        });
+
+        function loopsFetchFbclid(linkId) {
+            try {
+                const LoopsUrl = new URL(window.location.href);
+                const loopsFBClid = LoopsUrl.searchParams.get('fbclid');
+                if (loopsFBClid) {
+                    var loopsWaLink = document.getElementById(linkId).href;
+                    const separator = loopsWaLink.includes('?') ? '&' : '?';
+                    loopsWaLink = `${loopsWaLink}${separator}${'fbclid'}=${loopsFBClid}`;
+                    document.getElementById(linkId).setAttribute('href', loopsWaLink);
+                }
+            } catch (error) {
+                console.log(error);
+            }
+        }
+        loopsFetchFbclid('loops-form-order');
+
+        console.log('🚀 Garlicious Website Loaded - Loops.id Integration Active');
+    </script>
+</body>
+</html>
